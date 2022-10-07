@@ -27,11 +27,12 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 height: heightSize*10,
                 decoration: BoxDecoration(
-
-                    border: Border.all(
+                  borderRadius: BorderRadius.circular(15),
+                    border: Border.all(width: 2,
                         color: kPrimaryColor
                     ),
                 ),
+
               ),
             ),
         ],),
