@@ -45,7 +45,7 @@ child: SizedBox(
     child: AnimatedTextKit(
 
       animatedTexts: [
-        TypewriterAnimatedText('Oi meu nome é Lucas'),
+        TypewriterAnimatedText('Oi meu nome é Lucas.'),
       ],
     ),
   ),
