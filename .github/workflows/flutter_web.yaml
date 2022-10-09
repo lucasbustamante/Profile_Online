@@ -31,7 +31,7 @@ jobs:
           git config --global user.email lucascostabustamante@gmail.com
           git config --global user.name lucasbustamante
           git status
-          git remote add origin https://${{secrets.ACCESS_TOKEN}}@github.com/lucasbustamante/lucasbustamante.github.io.git
+          git remote add origin https://${{secrets.KEY_TOKEN}}@github.com/lucasbustamante/lucasbustamante.github.io.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
