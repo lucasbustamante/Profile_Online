@@ -45,7 +45,13 @@ child: SizedBox(
     child: AnimatedTextKit(
 
       animatedTexts: [
-        TypewriterAnimatedText('Oi meu nome é Lucas.'),
+        TypewriterAnimatedText('Oi,meu nome é Lucas. \n'
+            ' tenho 28 anos e atualmente estou cursando análise \n'
+    'e desenvolvimento de sistemas, além de fazer vários cursos sobre \n '
+        'Dart e Flutter.Em 2021 virei a chave da minha vida e decidi iniciar minha \n '
+            'carreira como dev, hoje estou aberto a qualquer tipo de oportunidade que \n '
+            'possa agregar algo à minha vida profissional, além de poder ter a chance \n '
+            'de mostrar minhas habilidades e conhecimentos.'),
       ],
     ),
   ),

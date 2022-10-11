@@ -29,7 +29,7 @@ class _LoadingPageState extends State<LoadingPage> {
             style: const TextStyle(
                 fontSize: 70,
                 fontFamily: 'Minecraft',
-                color: kButton
+                color: kPrimaryColor
             ),
             child: AnimatedTextKit(
               repeatForever: true,
