@@ -68,7 +68,7 @@ class Click_Page extends StatelessWidget {
                                       color: kPrimaryColor
                                   ))),
                               child: Center(
-                                child: Text('$idade', style: TextStyle(color: kPrimaryColor,
+                                child: Text('ACESSAR', style: TextStyle(color: kPrimaryColor,
                                     fontSize: 30),),
                               )
                           ),
