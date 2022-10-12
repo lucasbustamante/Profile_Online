@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'View/click_page.dart';
+import 'view/click_page.dart';
 
 void main(){
   runApp(MyApp());
