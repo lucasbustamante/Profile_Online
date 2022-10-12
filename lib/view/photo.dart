@@ -11,17 +11,15 @@ class Photo extends StatelessWidget {
     var heightSize = MediaQuery.of(context).size.height*0.08;
     var widthSize = MediaQuery.of(context).size.width*0.08;
 
-    return Row(mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(right: 90, top: 40),
-          child: SizedBox(height: heightSize*3,
-            width: heightSize*3,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: kPrimaryColor,
-              ),
+    return Padding(
+      padding: const EdgeInsets.only(left: 40, bottom: 30),
+      child: SizedBox(height: 200,
+        width: 200,
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: kPrimaryColor,
+          ),
     child: Padding(
       padding: const EdgeInsets.all(6.0),
       child: Image.network(
@@ -31,11 +29,8 @@ class Photo extends StatelessWidget {
       'pnxZJ_wVuU3KV6iBdraQ8bEmf2IAnQfCrM9-vwFcLjg'),
     ),
 
-                )
-            ),
-          ),
-
-      ],
-    );
+            )
+        ),
+      );
   }
 }
