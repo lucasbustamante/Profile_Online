@@ -1,9 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/colors/colors.dart';
+import 'package:flutter_web_site/colors/colors.dart';
 import 'dart:math';
 import '../constants.dart';
-import 'liners.dart';
+import '../model/liners.dart';
 import 'loading.dart';
 
 class Click_Page extends StatelessWidget {
@@ -49,8 +49,7 @@ class Click_Page extends StatelessWidget {
                   height: 300,
                   width: 500,
                   decoration: (BoxDecoration(
-                    gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter,
-                    colors: [Colors.black, kUnderBackground2]) ,
+
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
                           color: kPrimaryColor
