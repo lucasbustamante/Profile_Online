@@ -57,9 +57,9 @@ child: Stack(
           children: [
             Row(
               children: [
-                ActionButton(),
-                ActionButton(),
-                ActionButton(),
+                ActionButton(Icon(Icons.info_outline, color: kPrimaryColor,)),
+                ActionButton(Icon(Icons.info_outline, color: kPrimaryColor,)),
+                ActionButton(Icon(Icons.info_outline, color: kPrimaryColor,)),
               ],
             ),
             Container(

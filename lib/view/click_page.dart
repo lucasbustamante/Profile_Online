@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_site/colors/colors.dart';
+import 'package:flutter_web_site/view/backgroundAnimation.dart';
 import 'dart:math';
 import '../constants.dart';
 import '../model/liners.dart';
@@ -12,32 +13,11 @@ class Click_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String textnum =  '';
-    for(int cont = 0; cont < 30000; cont ++){
-      int num = Random().nextInt(2);
-      textnum += num.toString();
-    }
-
     return Scaffold(
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-
-          SizedBox(
-            child: DefaultTextStyle(
-              style: const TextStyle(
-                  fontSize: 30.0,
-                  fontFamily: 'Minecraft',
-                  color: kUnderBackground
-              ),
-              child: AnimatedTextKit(
-                animatedTexts: [
-                  TypewriterAnimatedText('$textnum',
-                      speed: Duration(milliseconds: 5)),
-                ],
-              ),
-            ),
-          ),
+          BackAnimation(),
           Center(
           child: SingleChildScrollView(
             child: Column(

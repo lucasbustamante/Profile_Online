@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_site/colors/colors.dart';
 
 class ActionButton extends StatelessWidget {
-  const ActionButton({Key? key}) : super(key: key);
+  final Widget IconImage;
+
+  const ActionButton(this.IconImage);
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +15,7 @@ class ActionButton extends StatelessWidget {
         color: kUnderBackground,
         border: Border.all(color: kPrimaryColor)
       ),
+      child: IconImage,
     );
   }
 }
