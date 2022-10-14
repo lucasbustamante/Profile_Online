@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_web_site/colors/colors.dart';
 import 'package:flutter_web_site/model/liners.dart';
 
-class Infos extends StatefulWidget {
-  const Infos({Key? key}) : super(key: key);
+class Infos extends StatelessWidget {
 
-  @override
-  State<Infos> createState() => _InfosState();
-}
+  final String Nome;
+  final int Idade;
+  final String Cidade;
 
-class _InfosState extends State<Infos> {
+  const Infos(this.Nome, this.Idade,this.Cidade);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -37,8 +37,17 @@ class _InfosState extends State<Infos> {
                     color: kPrimaryColor
                 ),
                 child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('lucas'),
+                    Padding(padding: EdgeInsets.only(top: 15)),
+                    Text('Nome:'),
+                    Text(Nome),
+                    Padding(padding: EdgeInsets.only(top: 15)),
+                    Text('Idade:'),
+                    Text('$Idade'),
+                    Padding(padding: EdgeInsets.only(top: 15)),
+                    Text('Cidade:'),
+                    Text(Cidade),
                   ],
                 ),
               ),

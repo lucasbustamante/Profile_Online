@@ -1,9 +1,10 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_site/constants.dart';
+import 'package:flutter_web_site/model/buttons.dart';
 import 'package:flutter_web_site/view/infos.dart';
 import 'package:flutter_web_site/view/photo.dart';
 import 'package:flutter_web_site/colors/colors.dart';
-
 import 'model/liners.dart';
 
 class HomePage extends StatefulWidget {
@@ -47,28 +48,54 @@ class _HomePageState extends State<HomePage> {
 child: Stack(
   children: [
     Liners(),
-    SizedBox(
-      child: DefaultTextStyle(
-            style: const TextStyle(
-            fontSize: 30.0,
-            fontFamily: 'Minecraft',
-            color: kPrimaryColor
+    Center(
+      child: Container(
+        width: 800,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Row(
+              children: [
+                ActionButton(),
+                ActionButton(),
+                ActionButton(),
+              ],
             ),
-            child: AnimatedTextKit(
+            Container(
+              height: 400,
+              width: 800,
+              decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(20),
+                      bottomRight: Radius.circular(20), bottomLeft: Radius.circular(20)),
+                  border: Border.all(
+                    color: kPrimaryColor,
+                  )
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(25),
+                child: SizedBox(
+                  child: DefaultTextStyle(
+                    style: const TextStyle(
+                        fontSize: 30.0,
+                        fontFamily: 'Minecraft',
+                        color: kPrimaryColor
+                    ),
+                    child: AnimatedTextKit(isRepeatingAnimation: false,
 
-      animatedTexts: [
-            TypewriterAnimatedText(' Oi, meu nome é Lucas. tenho 28 anos e '
-                'atualmente estou cursando análise e desenvolvimento de '
-                'sistemas, além de fazer vários cursos sobre Dart e Flutter. '
-                'Em 2021 virei a chave da minha vida e decidi iniciar minha '
-                'carreira como dev, hoje estou aberto a qualquer tipo de '
-                'oportunidade que possa agregar algo à minha vida profissional, '
-                'além de poder ter a chance de mostrar minhas habilidades e'
-                ' conhecimentos.'),
-      ],
+                      animatedTexts: [
+                        TypewriterAnimatedText(Apresentacao),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ),
-      ),
-    ),
+          ],
+        ),
+      )
+    )
   ],
 )
 
@@ -76,7 +103,7 @@ child: Stack(
                     Column(
                       children: [
                         Photo(),
-                        Infos()
+                        Infos(Nome,Idade, Cidade)
                       ],
                     ),
                   ],
