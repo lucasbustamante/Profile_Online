@@ -1,4 +1,5 @@
-const version = 'V. 1.0.0';
+const version = 'V. 1.0.1';
+
 const Apresentacao = 'Olá, tenho 28 anos e atualmente estou cursando análise e '
     'desenvolvimento de sistemas, quero me profissionalizar como desenvolvedor '
     'mobile, hoje meu foco é o Flutter.\n'
@@ -6,6 +7,7 @@ const Apresentacao = 'Olá, tenho 28 anos e atualmente estou cursando análise e
     'hoje estou aberto a qualquer tipo de oportunidade que possa agregar algo '
     'à minha vida profissional, além de poder ter a chance de mostrar minhas '
     'habilidades e conhecimentos.';
+
 const Nome = 'Lucas';
 const Idade = 28;
 const Cidade = 'São Paulo - SP';
