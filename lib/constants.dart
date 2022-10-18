@@ -9,7 +9,7 @@ const Apresentacao = 'Olá, tenho 28 anos e atualmente estou cursando análise e
     'habilidades e conhecimentos.';
 
 const Nome = 'Lucas';
-const Idade = 28;
+const Idade = 27;
 const Cidade = 'São Paulo - SP';
 
 dynamic idade;
