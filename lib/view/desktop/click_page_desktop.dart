@@ -1,14 +1,12 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_site/colors/colors.dart';
 import 'package:flutter_web_site/view/backgroundAnimation.dart';
-import 'dart:math';
-import '../constants.dart';
-import '../model/liners.dart';
-import 'loading.dart';
+import '../../constants.dart';
+import '../../model/liners.dart';
+import '../loading.dart';
 
-class Click_Page extends StatelessWidget {
-  const Click_Page({Key? key}) : super(key: key);
+class Click_Page_Desktop extends StatelessWidget {
+  const Click_Page_Desktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

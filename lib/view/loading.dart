@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import '../colors/colors.dart';
 import '../home.dart';
+import 'mobile/home_mobile.dart';
 
 class LoadingPage extends StatefulWidget {
   const LoadingPage({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _LoadingPageState extends State<LoadingPage> {
   @override
   void initState() {
     Timer(Duration(seconds: 4), () {
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeMobile()));
     });
     super.initState();
   }
@@ -27,7 +28,7 @@ class _LoadingPageState extends State<LoadingPage> {
 
           child: DefaultTextStyle(
             style: const TextStyle(
-                fontSize: 70,
+                fontSize: 60,
                 fontFamily: 'Minecraft',
                 color: kPrimaryColor
             ),

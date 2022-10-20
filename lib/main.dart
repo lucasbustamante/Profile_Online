@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home.dart';
-import 'view/click_page.dart';
+import 'view/desktop/click_page_desktop.dart';
 
 void main(){
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "Minecraft",),
-      home: Click_Page(),
+      home: HomePage(),
     );
   }
 }
