@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'view/home.dart';
 import 'view/desktop/click_page_desktop.dart';
 
 void main(){

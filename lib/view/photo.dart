@@ -8,11 +8,8 @@ class Photo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    var heightSize = MediaQuery.of(context).size.height*0.08;
-    var widthSize = MediaQuery.of(context).size.width*0.08;
-
     return Padding(
-      padding: const EdgeInsets.only(left: 40, bottom: 30),
+      padding: const EdgeInsets.only(bottom: 30),
       child: SizedBox(height: 200,
         width: 200,
         child: Container(

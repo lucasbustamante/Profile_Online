@@ -12,49 +12,46 @@ class Infos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 40),
-      child: Stack(
-        children: [Container(
-          height: 320,
-          width: 200,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15),
-            border: Border.all(
-              color: kPrimaryColor
-            )
+    return Stack(
+      children: [Container(
+        height: 320,
+        width: 200,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(
+            color: kPrimaryColor
+          )
 
-            ),
-            child: Liners(),
-        ),
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: SizedBox(
-              child: DefaultTextStyle(
-                style: const TextStyle(
-                    fontSize: 20,
-                    fontFamily: 'Minecraft',
-                    color: kPrimaryColor
-                ),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Text('Nome:'),
-                    Text(Nome),
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Text('Idade:'),
-                    Text('$Idade'),
-                    Padding(padding: EdgeInsets.only(top: 15)),
-                    Text('Cidade:'),
-                    Text(Cidade),
-                  ],
-                ),
+          ),
+          child: Liners(),
+      ),
+        Padding(
+          padding: const EdgeInsets.all(10),
+          child: SizedBox(
+            child: DefaultTextStyle(
+              style: const TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Minecraft',
+                  color: kPrimaryColor
+              ),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(padding: EdgeInsets.only(top: 15)),
+                  Text('Nome:'),
+                  Text(Nome),
+                  Padding(padding: EdgeInsets.only(top: 15)),
+                  Text('Idade:'),
+                  Text('$Idade'),
+                  Padding(padding: EdgeInsets.only(top: 15)),
+                  Text('Cidade:'),
+                  Text(Cidade),
+                ],
               ),
             ),
-          )
-        ]
-      ),
+          ),
+        )
+      ]
     );
   }
 }
