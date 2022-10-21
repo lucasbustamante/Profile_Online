@@ -15,7 +15,7 @@ class LoadingPage extends StatefulWidget {
 class _LoadingPageState extends State<LoadingPage> {
   @override
   void initState() {
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeMobile()));
     });
     super.initState();
